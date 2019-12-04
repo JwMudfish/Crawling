@@ -31,10 +31,10 @@ time.sleep(2)
 driver.switch_to_frame("home")
 
 id_key = driver.find_element_by_css_selector('input.loginbox:nth-child(3)')
-id_key.send_keys('kncompany')
+id_key.send_keys('myid')
 
 pw_key = driver.find_element_by_css_selector('#respass')
-pw_key.send_keys('bigv@lue33!@')
+pw_key.send_keys('mypw')
 
 time.sleep(1)
 
