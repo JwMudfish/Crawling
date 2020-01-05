@@ -1,0 +1,12 @@
+<form name="form" method="POST" action="/">
+    <input type="text" name="keyword" value="">
+    <input type="submit">
+</form>
+
+{% if magnets|length > 0 %}
+    {% for m in magnets %}
+        <li><a href="{{m.magnet}}" target="_blank">{{m.title}}</a></li>
+    {% endfor %}
+{% else %}
+    <p>검색 결과가 없습니다.</p>
+{% endif %}
